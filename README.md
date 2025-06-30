@@ -11,6 +11,27 @@ git clone git@github.com:AbdelrahmanAmgad201/EEG-SSVEP-and-MI-Classifier.git
 cd EEG-SSVEP-and-MI-Classifier
 ```
 
+### To train the MI model:
+
+1- Navigate to the MI directory:
+
+
+```bash
+cd src/MI
+```
+
+2- Open the notebook trainingPipeLine.ipynb.
+
+3- Update the dataset path in the notebook to point to your local EEG MI dataset.
+
+### To Run Inference on MI:
+
+1- Open the notebook inferencePipeLine.ipynb.
+
+2- Update the dataset path in the notebook to match your dataset.
+
+
+
 ## Preprocessing
 ### MI (Motor Imagery)
 Extensive research and analysis led us to select the C3, C4, and Cz channels for the Motor Imagery (MI) task, as these electrodes are closely associated with sensorimotor activity in the brain and are known to capture MI-related signals effectively.
