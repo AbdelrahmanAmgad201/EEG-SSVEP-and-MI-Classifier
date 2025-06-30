@@ -31,6 +31,21 @@ cd src/MI
 2- Update the dataset path in the notebook to match your dataset.
 
 
+### To train the SSVEP model:
+
+1- Navigate to the SSVEP directory:
+
+
+```bash
+cd src/SSVEP
+```
+
+TO DO HERE
+
+### To Run Inference on SSVEP:
+
+TO DO HERE
+
 
 ## Preprocessing
 ### MI (Motor Imagery)
