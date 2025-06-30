@@ -1,6 +1,8 @@
 # EEG-SSVEP-and-MI-Classifier
+![Cover Image](images/cover.jpg)
+
 This repository is the submission of MindCloud team for the MTC-AIC 3 challenge. It contains all the source code, documentation and checkpoints for out EEG signal classifier for both SSVEP and MI tasks.
-![System Diagram](images/cover.jpg)
+
 ## Installation
 ### Clone the repository
 ```bash
