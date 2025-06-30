@@ -30,9 +30,23 @@ A notch filter was applied in the 48–52 Hz range to suppress power-line interf
 We applied a band-pass filter to isolate the 8–30 Hz frequency band, which includes the mu (8–12 Hz) and beta (13–30 Hz) rhythms—key frequency components associated with motor imagery activity.
 
 ### Artifact Removal using ICA
-Independent Component Analysis (ICA) was used to identify and remove artifacts such as eye blinks, muscle activity, and other noise sources. This significantly improved the signal quality and helped retain only the neural components relevant to the MI task.
+Independent Component Analysis (ICA) was used to identify and remove artifacts such as muscle activity, and other noise sources. This significantly improved the signal quality and helped retain only the neural components relevant to the MI task.
 
 ## Chosen Architecture
+## MI (Motor Imagery)
+We evaluated a wide range of model architectures for the MI classification task, ranging from deep learning approaches such as Conformer-based models to traditional machine learning algorithms. However, given the relatively small dataset size and the risk of overfitting with deep models, we opted for a more robust and interpretable machine learning pipeline.
+
+Final Ensemble Architecture
+The chosen architecture was an ensemble classifier using soft voting, combining the outputs of the following models:
+
+Random Forest Classifier
+An ensemble of decision trees that provides strong performance on high-dimensional, structured data. It is robust to noise and overfitting, especially useful when features are extracted from EEG signals.
+
+XGBoost
+A powerful gradient-boosted tree model known for its speed and regularization capabilities. It handles noise and outliers well and adds diversity to the ensemble.
+
+Support Vector Machine (SVM)
+A kernel-based classifier that excels in separating high-dimensional feature spaces with clear margins. It complements the tree-based models by providing a different decision boundary perspective.
 ## Results
 ## Challenges and Insights
 
