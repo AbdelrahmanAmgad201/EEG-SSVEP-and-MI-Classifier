@@ -12,7 +12,7 @@ cd EEG-SSVEP-and-MI-Classifier
 ```
 
 ## Preprocessing
-## MI (Motor Imagery)
+### MI (Motor Imagery)
 Extensive research and analysis led us to select the C3, C4, and Cz channels for the Motor Imagery (MI) task, as these electrodes are closely associated with sensorimotor activity in the brain and are known to capture MI-related signals effectively.
 
 Raw Data:
@@ -36,9 +36,10 @@ Independent Component Analysis (ICA) was used to identify and remove artifacts s
 ### Final Preprocessed Signal in time domain :
 ![Cover Image](images/6.png)
 
+### SSVEP (Steady State Visually Evoked Potential)
 
 ## Chosen Architecture
-## MI (Motor Imagery)
+### MI (Motor Imagery)
 We evaluated a wide range of model architectures for the MI classification task, ranging from deep learning approaches such as Conformer-based models to traditional machine learning algorithms. However, given the relatively small dataset size and the risk of overfitting with deep models, we opted for a more robust and interpretable machine learning pipeline.
 
 Final Ensemble Architecture
@@ -52,6 +53,8 @@ A powerful gradient-boosted tree model known for its speed and regularization ca
 
 Support Vector Machine (SVM)
 A kernel-based classifier that excels in separating high-dimensional feature spaces with clear margins. It complements the tree-based models by providing a different decision boundary perspective.
+
+### SSVEP (Steady State Visually Evoked Potential)
 ## Results
 ## Challenges and Insights
 
