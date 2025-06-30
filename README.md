@@ -15,8 +15,10 @@ cd EEG-SSVEP-and-MI-Classifier
 ## MI (Motor Imagery)
 Extensive research and analysis led us to select the C3, C4, and Cz channels for the Motor Imagery (MI) task, as these electrodes are closely associated with sensorimotor activity in the brain and are known to capture MI-related signals effectively.
 
-The preprocessing pipeline involved several critical steps to ensure clean and informative EEG data:
+Raw Data:
 ![Cover Image](images/1.png)
+The preprocessing pipeline involved several critical steps to ensure clean and informative EEG data:
+
 ### Frequency Domain Transformation
 The raw EEG signals were transformed into the frequency domain using the Fast Fourier Transform (FFT). This allowed us to better isolate and process relevant frequency components.
 ![Cover Image](images/2.png)
