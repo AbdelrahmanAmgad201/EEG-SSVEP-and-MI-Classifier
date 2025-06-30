@@ -69,6 +69,10 @@ EEG signals are inherently noisy and prone to various artifacts such as eye move
 - Model Selection and Complexity Trade-off
 Choosing the right model architecture was a key challenge. While deep learning models can capture complex patterns, they often require large datasets and long training times. Striking the balance between model complexity and performance was non-trivial.
 ## Insights
+- Simplicity Works
+Through experimentation, we discovered that simpler machine learning models, when paired with high-quality preprocessing, consistently outperformed more complex architectures. Ensemble methods like soft voting with Random Forest, XGBoost, and SVM offered strong results without the overhead and instability associated with deep learning.
+- Preprocessing Is Critical
+Effective preprocessing turned out to be more impactful than increasing model complexity. Steps like band-pass filtering, notch filtering, and ICA-based artifact removal significantly enhanced the quality of the input features and led to more reliable predictions.
 
 ## Other Contributions
 ### Signal visualiser
