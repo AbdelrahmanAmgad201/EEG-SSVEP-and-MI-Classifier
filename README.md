@@ -18,11 +18,11 @@ cd EEG-SSVEP-and-MI-Classifier
 
 ## Other Contributions
 ### Signal visualiser
-We developed a signal visualizer GUI to support data exploration and preprocessing. You can find it [here](https://www.youtube.com/)
+We developed a signal visualizer GUI to support data exploration and preprocessing. You can find it [here](https://github.com/AmirKaseb/EEG-GUI)
 ### SSVEP Simulator
 We developed and hosted a real-time SSVEP simulator that can be configured and used for further real-time testing. It is available [here](https://gilded-kitsune-dfc3ec.netlify.app/)
 ## Future Plans
-
+We have been exploring the possibility of acquiring a EEG signal headset to facilitate real-time testing and improving model accuracy and robustness to reach industry level performance.
 
 ## References
 
