@@ -30,9 +30,12 @@ A notch filter was applied in the 48–52 Hz range to suppress power-line interf
 ![Cover Image](images/4.png)
 ### Band-Pass Filtering (8–30 Hz)
 We applied a band-pass filter to isolate the 8–30 Hz frequency band, which includes the mu (8–12 Hz) and beta (13–30 Hz) rhythms—key frequency components associated with motor imagery activity.
-
+![Cover Image](images/5.png)
 ### Artifact Removal using ICA
 Independent Component Analysis (ICA) was used to identify and remove artifacts such as muscle activity, and other noise sources. This significantly improved the signal quality and helped retain only the neural components relevant to the MI task.
+### Final Preprocessed Signal in time domain :
+![Cover Image](images/6.png)
+
 
 ## Chosen Architecture
 ## MI (Motor Imagery)
