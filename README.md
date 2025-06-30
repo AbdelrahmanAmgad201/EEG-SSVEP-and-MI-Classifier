@@ -56,7 +56,19 @@ A kernel-based classifier that excels in separating high-dimensional feature spa
 
 ### SSVEP (Steady State Visually Evoked Potential)
 ## Results
-## Challenges and Insights
+## Challenges
+Throughout the development of our EEG classifier for both SSVEP and Motor Imagery (MI) tasks, we encountered several challenges that shaped our design decisions:
+- Limited Dataset Size
+One of the most critical limitations was the relatively small size of the available dataset. This made it difficult to train complex deep learning models without overfitting.
+- Limited Number of EEG Channels
+The EEG data was recorded using a limited number of channels, which constrained the spatial resolution and reduced the ability to fully capture underlying brain activity patterns. This required careful channel selection and feature engineering, particularly for tasks like MI where specific regions (e.g., C3, C4, Cz) are crucial.
+
+- Noisy and Artifact-Laden Signals
+EEG signals are inherently noisy and prone to various artifacts such as eye movements, muscle activity, and environmental electrical interference. These artifacts significantly degrade classification performance if not handled properly. As discussed in the preprocessing section, artifact removal (especially through ICA) was essential to improving signal quality.
+
+- Model Selection and Complexity Trade-off
+Choosing the right model architecture was a key challenge. While deep learning models can capture complex patterns, they often require large datasets and long training times. Striking the balance between model complexity and performance was non-trivial.
+## Insights
 
 ## Other Contributions
 ### Signal visualiser
