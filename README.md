@@ -34,18 +34,53 @@ cd src/MI
 ### To train the SSVEP model:
 
 1- Navigate to the SSVEP directory:
+2- Open the training script train_fbcca.py in your preferred code editor.
+3- Update the dataset path in the script to match your local EEG SSVEP dataset location.
+4- Modify the frequencies list if needed to reflect the specific stimulus frequencies in your dataset.
 
+Run the training script:
 
 ```bash
-cd src/SSVEP
+python train_fbcca.py
 ```
 
-TO DO HERE
+The script will:
+
+Preprocess the EEG signals (filtering, epoching, normalization).
+
+Apply the FBCCA algorithm.
+
+Print accuracy metrics and optionally save predictions to disk.
+
+If configured, logs and results will be saved in the outputs/ directory.
+
 
 ### To Run Inference on SSVEP:
 
-TO DO HERE
+Navigate to the SSVEP directory:
 
+Open the inference script inference_fbcca.py in your preferred code editor.
+
+Update the dataset path to point to the EEG data you want to classify.
+
+Make sure the frequencies list and other parameters (e.g., epoch length, number of channels) match those used during training.
+
+Run the inference script:
+
+```bash
+
+python inference_fbcca.py
+```
+
+The script will:
+
+Load and preprocess the EEG test data.
+
+Apply the FBCCA method.
+
+Output the predicted class (target frequency) for each trial.
+
+Optionally save the predictions in a .csv file in the outputs/ directory.
 
 ## Preprocessing
 ### MI (Motor Imagery)
@@ -72,7 +107,6 @@ Independent Component Analysis (ICA) was used to identify and remove artifacts s
 ### Final Preprocessed Signal in time domain :
 ![Cover Image](images/6.png)
 
-### SSVEP (Steady State Visually Evoked Potential)
 
 ## Chosen Architecture
 ### MI (Motor Imagery)
