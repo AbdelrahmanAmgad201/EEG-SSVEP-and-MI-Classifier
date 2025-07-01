@@ -125,7 +125,12 @@ Support Vector Machine (SVM)
 A kernel-based classifier that excels in separating high-dimensional feature spaces with clear margins. It complements the tree-based models by providing a different decision boundary perspective.
 
 ### SSVEP (Steady State Visually Evoked Potential)
-## Results
+
+FBCCA Model Architecture
+The Filter Bank Canonical Correlation Analysis (FBCCA) model is a signal processing–based approach tailored for classifying Steady-State Visually Evoked Potential (SSVEP) responses. Unlike deep learning models, FBCCA does not require training on labeled data and instead relies on statistical correlation between EEG signals and reference sinusoidal templates. The model applies a filter bank—a set of band-pass filters—to the input EEG signal to extract frequency-specific sub-bands. For each sub-band, Canonical Correlation Analysis (CCA) is performed between the EEG data and reference signals (sine-cosine pairs at stimulus frequencies and harmonics). The correlation scores from all sub-bands are aggregated using a weighted sum, where lower-frequency bands typically receive higher weights due to stronger SSVEP responses. The class (frequency) with the highest combined correlation is selected as the final prediction. This architecture is simple, robust, and particularly effective for real-time, low-latency brain-computer interface (BCI) systems.
+
+
+
 ## Challenges
 Throughout the development of our EEG classifier for both SSVEP and Motor Imagery (MI) tasks, we encountered several challenges that shaped our design decisions:
 - Limited Dataset Size
@@ -152,5 +157,4 @@ We developed and hosted a real-time SSVEP simulator that can be configured and u
 ## Future Plans
 We have been exploring the possibility of acquiring a EEG signal headset to facilitate real-time testing and improving model accuracy and robustness to reach industry level performance.
 
-## References
 
